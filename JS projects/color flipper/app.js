@@ -15,6 +15,8 @@ btn.addEventListener("click",function(){
 
 //function definition to generate a random number 
 function randnum() {
-    return Math.floor(Math.random() * colors.length);  
+    return Math.floor(Math.random() * colors.length);
+    const v = Math.ceil(40.3345);
+    console.log(v);  
     
 }                        
