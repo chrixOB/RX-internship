@@ -67,6 +67,17 @@ body{
     margin-left: 20px;
 
 }
+.fa-biohazard{
+    transform: translate(-30px,5px);
+    font-size: xx-large;
+}
+.level-sidebar__head a span{
+    color:rgb(237, 54, 98);
+}
+.LA:hover{
+    background:  linear-gradient(rgba(255, 255, 255, 0.6),rgba(253, 254, 255, 0.6));
+
+}
 
 .description{
     width: 220px;
@@ -74,8 +85,15 @@ body{
     font-size: 1rem;
     color: rgb(147, 88, 202);
     padding-top: 10px;
+    font-weight: bold;
     padding-left: 15px;
     font-family: 'Inter', sans-serif;
+}
+.des{
+    color: rgb(147, 88, 202);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
 }
 .detailed-description{
     width: 220px;
