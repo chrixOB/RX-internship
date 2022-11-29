@@ -11,8 +11,23 @@
 </head>
 <body>
     <div class="banner">
-        <img src="./assets/hlogo.png" alt="logo" class="logo">
-        <button class="login-button">log in</button>
+        <div class="logo-login">
+            <img src="./assets/hlogo.png" alt="logo" class="logo">
+        
+            <button class="login-button">log in</button>
+        </div>
+        <div class="wrapper">    
+            <i class="fa-solid fa-bars"></i>
+            <div class="display-menu ">
+                <div>Get the hulu app</div>
+                <div class="dis-2" onclick="openmodal()">LOG IN</div>
+                <div class="dis-3">GET THIS DEAL</div>
+            </div>
+            </div>
+        
+        
+        
+        <div class="banner-center">
         <img src="./assets/cover.png" class="cover">
         <div class="banner__intro">
             <p>Get endless entertainment, live sports, and the shows and</p>
@@ -25,13 +40,14 @@
         <div class="banner__signup">
             <a href="#">Sign up for Hulu only</a>
         </div>
+        </div>
     </div>
 
     <div class="description">
         <p class="description__green">INCLUDED IN ALL PLANS</p>
         <p><h1 class="h1">ALL THE TV YOU LOVE</h1></p>
         <p class="description__end">Stream full seasons of exclusive series, current-season episodes, hit movies, hulu originals, kids</p>
-        <p>shows and more</p>
+        <p class="description__last">shows and more</p>
     </div>
     
     <div class="featured">
@@ -52,7 +68,7 @@
             <p class="category">Premiums</p>
         </div>
     </div>
-    <div class="premium-info">Premium network add-ona available for an additional cost</div>
+    <!-- <div class="premium-info">Premium network add-ona available for an additional cost</div> -->
 
     <div class="subscription">
         <p class="subscription__green">HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+</p>
@@ -68,11 +84,12 @@
     <div class="slider">
         <div class="slider__info">
         <div class="slider__nav">
-            <div><a href="">Live sports</a></div>
-            <div id="io">breaking news</div>
-            <div>biggest events</div>
+            <!-- <div class="active-link"></div> -->
+            <a href="#">Live sports</a>
+            <a>breaking news</a>
+            <a>biggest events</a>
         </div>
-        <hr class="indicator" id="move">
+        <!-- <hr class="indicator" id="move"> -->
         <p class="slider__title">live sports</p>
         <span class="slider__gist">Catch your games at home or on the go. Stream live games from<br> major college and pro leagues including the NCAA<sup>&reg;</sup>, NBA, NHL,<br> NFL, and more.</span>
         <div class="slider__icons">
@@ -88,15 +105,28 @@
         <div class="footer__inner">
             <div class="footer__inner__top-rows">
             <div class="section">
-                <p class="bold"><b>browse</b></p>
+                <div class="bold">
+                    <div><b>browse</b></div><div><i class="fa-solid fa-angle-down" id="arrow"></i></div></div>
+                <div class="index">
                 <p>streaming library</p>
                 <p>live TV</p>
                 <p>live news</p>
                 <p>live sports</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
+                </div>
             </div>
+            <!-- <div class="index">
+            <div class="other">
+                <p>streaming library</p>
+                <p>live TV</p>
+                <p>live news</p>
+                <p>live sports</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div> -->
             <div class="section">
+                <div class="second">
                 <p>&nbsp;</p>
                 <p>TV shows</p>
                 <p>movies</p>
@@ -104,8 +134,10 @@
                 <p>networks</p>
                 <p>kids</p>
                 <p>FX</p>
+                </div>
             </div>
             <div class="section">
+                <div class="third">
                 <p>&nbsp;</p>
                 <p>HBO max&#8482;</p>
                 <p>cinemax</p>
@@ -113,16 +145,23 @@
                 <p>STARZ</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
+                </div>
             </div>
+            <!-- </div> -->
+            <hr class="separator">
             <div class="section">
-                <p class="bold"><b>help</b></p>
+                <div class="bold">
+                    <div><b>help</b></div><div><i class="fa-solid fa-angle-down" id="arrow-last"></i></div></div>
+                <div class="help-links">
                 <p>account & billing</p>
                 <p>plans & pricing</p>
                 <p>supported devices</p>
                 <p>accessibility</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
+                </div>
             </div>
+            <hr class="separator">
         </div>
         <hr class="line">
         <div class="footer__inner__icons">
