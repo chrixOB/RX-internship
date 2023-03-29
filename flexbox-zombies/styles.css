@@ -19,20 +19,44 @@ body{
     height: 100vh;
     /* background-attachment: scroll; */
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     background:rgb(40, 10, 61);
-
+    overflow: scroll;
+    transition: 3s ease-in-out;
+    box-shadow: 20px 0 25px black;
 }
-.level-sidebar__xlevels{
+.account{
+    border: 1px solid white;
+    width: 320px;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background:rgb(40, 10, 61);
+    transition: 3s ease-in-out;
+    box-shadow: 20px 0 25px black;
+}
+
+
+.fa-star{
+    padding-top: 10px;
+}
+.level-sidebar__xlevels,.account__xlevels{
     text-align: center;
     font-size: medium;
     color: whitesmoke;
     margin-top: 20px;
 }
-.level-sidebar__xlevels .fa-xmark{
+.level-sidebar__xlevels .fa-xmark,.account__xlevels .fa-xmark{
     transform: translateX(-95px);
+    cursor: pointer;
 }
+.account__xlevels .fa-xmark{
+    transform: translate(-95px,2px);
+    cursor: pointer;
+}
+
 .level-sidebar .level-sidebar__head{
     margin-top: 30px;
     margin-bottom: 40px;
@@ -43,6 +67,12 @@ body{
     font-family: 'Carter One', cursive;
     text-transform: capitalize;
     /* color: white; */
+}
+.account .account__head{
+    font-size: large;
+    color: white;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 .level-sidebar__title{
@@ -149,7 +179,7 @@ a:hover{
     background: linear-gradient(rgba(255, 255, 255, 0.6),rgba(253, 254, 255, 0.6));
 }
 .main{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: fit-content;
     margin-left: 80px;

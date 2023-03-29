@@ -16,12 +16,12 @@
         <div class="nav">
             <div class="nav__top">
                 <a href="#" class="nav__top__logo">
-                    <div><i class="fa-solid fa-star" style="padding-top: 10px;"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
                     <!-- <div>Levels</div> -->
                 </a>
                 <a href="#" class="nav__top__levels">
-                    <div><i class="fa-solid fa-bars"></i></div>
-                    <div>Levels</div>
+                    <div onclick="openmenu()"><i class="fa-solid fa-bars" onclick="openmenu()"></i></div>
+                    <div onclick="openmenu()">Levels</div>
                 </a>
                 <a href="#" class="nav__top__option">
                     <div><i class="fa-solid fa-sliders"></i></div>
@@ -30,18 +30,19 @@
             </div>
             <!-- <div class="nav__bottom" style="margin-bottom: 20px;"> -->
                 
-                <a href="#" class="nav__bottom__accounts" style="margin-bottom: 0; width: 100%; height: 75px;">
-                    <i class="fa-regular fa-user"></i>
-                    <div>account</div>
+                <a href="#" class="nav__bottom__accounts" style="margin-bottom: 0; width: 100%; height: 75px;"onclick="openaccount()">
+                    <i class="fa-regular fa-user" onclick="openaccount()"></i>
+                    <div onclick="openaccount()">account</div>
 
                 </a>
                 
             <!-- </div> -->
         </div>
+        
 
         <!-- levels side bar -->
         <div class="level-sidebar">
-            <div class="level-sidebar__xlevels"><i class="fa-solid fa-xmark"></i> <span>LEVELS</span></div>
+            <div class="level-sidebar__xlevels"><i class="fa-solid fa-xmark" id="cross" onclick="closemenu()"></i> <span>LEVELS</span></div>
             <div class="level-sidebar__head"><a href="#" class="LA"><i class="fa-solid fa-biohazard"></i> <span>flexbox zombies &nbsp;&nbsp;&nbsp;</span></a></div>
             <div class="level-sidebar__title">
                 <p class="first-paragraph">chapter 1</p>
@@ -96,6 +97,16 @@
         </div>
 
         <!-- levels side bar end here -->
+
+        <!-- account sidebar begins -->
+        <div class="account">
+            <div class="account__xlevels"><i class="fa-solid fa-xmark" id="cross" onclick="closeaccount()"></i> <span>ACCOUNT</span></div>
+            <div class="account__head">Sign out</div>
+
+
+        </div>
+
+        <!-- account sidebar ends here -->
         <div class="main">
             <h1 class="heading">flexbox zombies</h1>
             <div class="grid">
@@ -173,6 +184,29 @@
             </div>
         </div>
     </div>
+    <script>
+        // const x = document.querySelector('#cross');
+        const side = document.querySelector('.level-sidebar');
+        const acc = document.querySelector('.account')
+
+        // x.addEventListener('click', closemenu);
+
+        function closemenu(){
+            side.style.display = "none";
+        }
+         
+        function openmenu(){
+            side.style.display = "block";
+        }
+        function closeaccount(){
+            acc.style.display = "none";
+        }
+         
+        function openaccount(){
+            acc.style.display = "block";
+        }
+        
+    </script>
     
 </body>
 </html>

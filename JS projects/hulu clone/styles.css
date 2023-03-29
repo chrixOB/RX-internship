@@ -40,7 +40,7 @@ body{
     /* transform: translate(-615px,-90px); */
 }
 .fa-bars{
-    display: block;
+    display: none;
     color: white;
     background: gray;
     width: 20px;
@@ -795,7 +795,7 @@ body{
         color: gray;
         font-weight: bold;
         font-size: smaller;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
     .banner__signup{
         margin-top: 50px;

@@ -106,3 +106,7 @@ fetch('http://localhost:3000/comments',options)
 .then(response => response.json())
 .then(response => console.log(response))
 .catch(err => console.error(err));
+
+person = {name:"paul", age: "27", position: "Senior developer"  }
+
+console.log(person.name);
